@@ -43,7 +43,27 @@
 - updateInfo.ejs (Let user update his information, e.g. ID, Password, Name and Phone No.)
 - updateScore.ejs (It is for admin to update students' score)
 - create.ejs (It is for admin to create new student file, include ID and Password)
-## models folder
+## 2.4 models folder
 - account.js (It is for setting the mongoose schema)
 
-# 3.
+# 3. The cloud-based server URL 
+## Still trying
+
+# 4. Operation guides
+## 4.1 Account
+- (Admin account) id: tony, password: 123
+- (Non-admin account) id: tom, password: tom123
+- (Non-admin account) id: test, pwd: test
+## 4.2 Admin Login
+### 4.2.1 Read - read student information
+### 4.2.2 Update - edit student record
+### 4.2.3 Create - create a new student record
+### 4.2.4 Delete - remove the student record
+## 4.3 Non-admin Login
+### 4.3.1 Read - read its own information
+### 4.3.2 Update - edit its ID, Name or Phone No.
+## 4.4 RESTful CRUD Services
+### 4.4.1 Create (need admin, create student record)
+- curl -X POST http://localhost:8099/api/create -H "Content-Type: application/json" -d '{"id":"tony","pwd":"123","newid":"bob","newpwd":"bob123", "name":"Bob Leung","phone":"1234567890","eng":4,"chi":4,"math":4}'
+- - Result: Admin "tony" create a new Student File id called "bob", named "Bob Leung", which login password is "bob123", 
+its phone number is "1234567890", English score is "4", Chinese Score is "4", Math score is "4"
