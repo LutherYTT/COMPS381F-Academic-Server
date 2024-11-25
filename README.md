@@ -70,4 +70,16 @@ its phone number is "1234567890", English score is "4", Chinese Score is "4", Ma
 ### 4.4.2 Read (Need Admin, Check all student record, sort(0: ascend, 1: descend), default is sort=0)
 - curl -G "http://localhost:8099/api/read/all" --data-urlencode "id=tony" --data-urlencode "pwd=123" --data-urlencode "sort=1"
   - Result: Show all non-admin account information, sort descending
-  
+### 4.4.3 Read (Need Admin, Check specfic student record)
+- curl -G "http://localhost:8099/api/read/one" --data-urlencode "id=tony" --data-urlencode "pwd=123" --data-urlencode "targetid=test"
+  - Result: show the specfic account "test"'s information
+### 4.4.4 Read (Any User, Check his own information)
+- curl -G "http://localhost:8099/api/read" --data-urlencode "id=tom" --data-urlencode "pwd=tom123"
+  - Result: show the account "tom"'s information
+### 4.4.5 Update (Need Admin, Edit specfic account information)
+- curl -X PUT http://localhost:8099/api/updateScore -H "Content-Type: application/json" -d '{"id":"tony","pwd":"123","targetid":"test","math":"4"}'
+  - Result: Account "test"'s math score is update to "4"
+### 4.4.6 Update (Need Admin, Edit specfic account information)
+- curl -X PUT http://localhost:8099/api/updateScore -H "Content-Type: application/json" -d '{"id":"tony","pwd":"123","targetid":"test","eng":"5","chi":"4"}'
+  - Result: Account "test"'s english score and math score are update to "5" and "4"
+### 4.4.7 Update [Any User, Edit hos own account information]
