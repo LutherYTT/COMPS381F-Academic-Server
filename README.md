@@ -37,7 +37,13 @@
 - login.ejs (Login UI)
 - NAcontent.ejs (It show the user's information for non-admin user)
 - Acontent.ejs (If user are admin, they will redirect to this view)
+- index.ejs (It is the view for admin, can see the all students record, have the search bar, and the bar chart to show the students score)
+- sinfo.ejs (Same as index.ejs)
+- update.ejs
 - updateInfo.ejs (Let user update his information, e.g. ID, Password, Name and Phone No.)
-- updateScore.ejs (It is for admin to update students' score, also can update their others information)
+- updateScore.ejs (It is for admin to update students' score)
+- create.ejs (It is for admin to create new student file, include ID and Password)
+## models folder
+- account.js (It is for setting the mongoose schema)
 
 # 3.
