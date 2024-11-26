@@ -1,7 +1,7 @@
 # COMPS381F-Academic-Server
-
-* curl -X POST https://s381f-project-vye1.onrender.com/api/create -H "Content-Type: application/json" -d "{\"id\":\"tony\",\"pwd\":\"123\",\"newid\":\"bob\",\"newpwd\":\"bob123\", \"name\":\"Bob Leung\",\"phone\":\"1234567890\",\"eng\":\"4\",\"chi\":\"4\",\"math\":\"4\"}" *
-
+```
+curl -X POST https://s381f-project-vye1.onrender.com/api/create -H "Content-Type: application/json" -d "{\"id\":\"tony\",\"pwd\":\"123\",\"newid\":\"bob\",\"newpwd\":\"bob123\", \"name\":\"Bob Leung\",\"phone\":\"1234567890\",\"eng\":\"4\",\"chi\":\"4\",\"math\":\"4\"}" 
+```
 # 1. Project Info
 ### Group 47
 - Lu Yuk Tong (13439007)
