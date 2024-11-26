@@ -92,8 +92,8 @@ curl -G "https://s381f-project-vye1.onrender.com/api/read/all" --data-urlencode 
 ```
 - Result: Show all non-admin account information, sort descending
 ### 4.4.3 Read [Need Admin, Check specfic student record]
-``
-`curl -G "https://s381f-project-vye1.onrender.com/api/read/one" --data-urlencode "id=tony" --data-urlencode "pwd=123" --data-urlencode "targetid=bob"
+```
+curl -G "https://s381f-project-vye1.onrender.com/api/read/one" --data-urlencode "id=tony" --data-urlencode "pwd=123" --data-urlencode "targetid=bob"
 ```
 - Result: show the specfic account "test"'s information
 ### 4.4.4 Read [Any User, Check his own information]
