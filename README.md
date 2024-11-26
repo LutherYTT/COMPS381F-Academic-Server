@@ -1,5 +1,7 @@
 # COMPS381F-Academic-Server
 
+* curl -X POST https://s381f-project-vye1.onrender.com/api/create -H "Content-Type: application/json" -d "{\"id\":\"tony\",\"pwd\":\"123\",\"newid\":\"bob\",\"newpwd\":\"bob123\", \"name\":\"Bob Leung\",\"phone\":\"1234567890\",\"eng\":\"4\",\"chi\":\"4\",\"math\":\"4\"}" *
+
 # 1. Project Info
 ### Group 47
 - Lu Yuk Tong (13439007)
@@ -81,7 +83,7 @@
 ### 4.3.2 Update - edit its ID, Name or Phone No.
 ## 4.4 RESTful CRUD Services
 ### 4.4.1 Create [Need Admin, create student record]
-- [curl -X POST https://s381f-project-vye1.onrender.com/api/create -H "Content-Type: application/json" -d "{\"id\":\"tony\",\"pwd\":\"123\",\"newid\":\"bob\",\"newpwd\":\"bob123\", \"name\":\"Bob Leung\",\"phone\":\"1234567890\",\"eng\":\"4\",\"chi\":\"4\",\"math\":\"4\"}"]
+- curl -X POST https://s381f-project-vye1.onrender.com/api/create -H "Content-Type: application/json" -d "{\"id\":\"tony\",\"pwd\":\"123\",\"newid\":\"bob\",\"newpwd\":\"bob123\", \"name\":\"Bob Leung\",\"phone\":\"1234567890\",\"eng\":\"4\",\"chi\":\"4\",\"math\":\"4\"}"
   - Result: Admin "tony" create a new Student File id called "bob", named "Bob Leung", which login password is "bob123", 
 its phone number is "1234567890", English score is "4", Chinese Score is "4", Math score is "4"
 ### 4.4.2 Read [Need Admin, Check all student record, sort(0: ascend, 1: descend), default is sort=0]
